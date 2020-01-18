@@ -1,13 +1,8 @@
-// const React = require("react")
-// const ReactDOM = require("react-dom")
-// const Gugudan = require("./Gugudan.jsx")
-// const { hot } = require("react-hot-loader/root")
-import Gugudan from "./Gugudan.jsx"
 import React from "react"
 import ReactDOM from "react-dom"
+import App from "./App.jsx"
+import Gugudan from "./src/routes/gugudan/Gugudan.jsx"
 import { hot } from "react-hot-loader/root"
-const Hot = hot(Gugudan)
-
-console.log(Gugudan)
+const Hot = hot(App)
 
 ReactDOM.render(<Hot />, document.getElementById("root"))

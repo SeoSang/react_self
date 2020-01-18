@@ -1,0 +1,13 @@
+.navigator_ul a {
+  text-decoration: none;
+  color: #130f40;
+}
+
+.navigator_ul li {
+  display: inline-block;
+  margin: 0 2%;
+  text-decoration: none;
+  background-color: chartreuse;
+  border-radius: 12px;
+  padding: 1%;
+}
