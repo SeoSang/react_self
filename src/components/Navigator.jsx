@@ -5,13 +5,18 @@ import "./Navigator.css"
 
 export default function Navigator() {
   return (
-    <ul className="navigator_ul">
-      <li>
-        <Link to="/home">Home</Link>
-      </li>
-      <li>
-        <Link to="/gugudan">Gugudan</Link>
-      </li>
-    </ul>
+    <>
+      <Link to="/home" className="btn-home">
+        Home
+      </Link>
+      <ul className="navigator_ul">
+        <Link to="/gugudan">
+          <li>Gugudan</li>
+        </Link>
+        <Link to="/wordrelay">
+          <li>Word Relay</li>
+        </Link>
+      </ul>
+    </>
   )
 }

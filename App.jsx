@@ -4,6 +4,7 @@ import Gugudan from "./src/routes/gugudan/Gugudan.jsx"
 import Home from "./Home.jsx"
 import Footer from "./src/components/Footer.jsx"
 import Navigator from "./src/components/Navigator.jsx"
+import WordRelay from "./src/routes/wordRelay/wordRelay.jsx"
 import "./App.css"
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/gugudan" component={Gugudan} />
+          <Route path="/wordrelay" component={WordRelay} />
         </Switch>
         <Navigator />
       </BrowserRouter>
