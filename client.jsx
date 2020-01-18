@@ -1,6 +1,13 @@
-const React = require("react")
-const { Component } = React
-const ReactDOM = require("react-dom")
-const Application = require("./Application.jsx")
+// const React = require("react")
+// const ReactDOM = require("react-dom")
+// const Gugudan = require("./Gugudan.jsx")
+// const { hot } = require("react-hot-loader/root")
+import Gugudan from "./Gugudan.jsx"
+import React from "react"
+import ReactDOM from "react-dom"
+import { hot } from "react-hot-loader/root"
+const Hot = hot(Gugudan)
 
-ReactDOM.render(<Application />, document.getElementById("root"))
+console.log(Gugudan)
+
+ReactDOM.render(<Hot />, document.getElementById("root"))

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./Gugudan.css"
 // const React = require("react")
 // const { useState } = React
+// require("./Gugudan.css")
 
 const Gugudan = () => {
   const NUMBER_DAN = 9
@@ -70,5 +71,5 @@ const Gugudan = () => {
   )
 }
 
-// module.exports = Gugudan
 export default Gugudan
+// module.exports = Gugudan

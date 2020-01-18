@@ -18,17 +18,18 @@ module.exports = {
         loader: "babel-loader",
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
-          plugins: ["@babel/plugin-proposal-class-properties"]
+          plugins: ["@babel/plugin-proposal-class-properties", "react-hot-loader/babel"]
         }
       },
       {
         test: /\.css?$/,
-        loader: "css-loader"
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
   output: {
     path: path.join(__dirname, "dist"),
-    filename: "app.js"
+    filename: "app.js",
+    publicPath: "/dist/"
   }
 }
