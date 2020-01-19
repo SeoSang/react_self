@@ -16,6 +16,9 @@ export default function Navigator() {
         <Link to="/wordrelay">
           <li>Word Relay</li>
         </Link>
+        <Link to="/numberbaseball">
+          <li>Number Baseball</li>
+        </Link>
       </ul>
     </>
   )
