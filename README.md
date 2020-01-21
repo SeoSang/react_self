@@ -5,7 +5,7 @@ $ npm create-react-web
 ```
 
 를 사용하지 않고
-babel과 webpack을 이용하여 직접 빌드해보는 연습입니다.
+babel과 webpack을 이용하여 직접 빌드해보는 연습입니다.   
 
 
 

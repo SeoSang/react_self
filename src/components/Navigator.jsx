@@ -19,6 +19,9 @@ export default function Navigator() {
         <Link to="/numberbaseball">
           <li>Number Baseball</li>
         </Link>
+        <Link to="/fastclick">
+          <li>Fast Click</li>
+        </Link>
       </ul>
     </>
   )

@@ -1,5 +1,6 @@
 const path = require("path")
 const webpack = require("webpack")
+var HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   name: "gugudan-setting",
@@ -31,5 +32,13 @@ module.exports = {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
     publicPath: "/dist/"
-  }
+  },
+  devServer: {
+    historyApiFallback: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./index.html"
+    })
+  ]
 }
