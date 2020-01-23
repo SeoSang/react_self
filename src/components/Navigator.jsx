@@ -7,20 +7,23 @@ export default function Navigator() {
   return (
     <>
       <Link to="/home" className="btn-home">
-        Home
+        홈으로 가기
       </Link>
       <ul className="navigator_ul">
         <Link to="/gugudan">
-          <li>Gugudan</li>
+          <li>구구단</li>
         </Link>
         <Link to="/wordrelay">
-          <li>Word Relay</li>
+          <li>끝말잇기</li>
         </Link>
         <Link to="/numberbaseball">
-          <li>Number Baseball</li>
+          <li>숫자야구</li>
         </Link>
         <Link to="/fastclick">
-          <li>Fast Click</li>
+          <li>스피드 게임</li>
+        </Link>
+        <Link to="/rsp">
+          <li>가위바위보</li>
         </Link>
       </ul>
     </>
