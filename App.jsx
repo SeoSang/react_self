@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/numberbaseball" component={NumberBaseball} />
           <Route path="/fastclick" component={FastClick} />
         </Switch>
-        <Navigator />
       </BrowserRouter>
       <Footer />
     </>
