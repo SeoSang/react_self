@@ -7,7 +7,7 @@ import Navigator from "./src/components/Navigator.jsx"
 import WordRelay from "./src/routes/wordRelay/WordRelay.jsx"
 import NumberBaseball from "./src/routes/numberBaseball/NumberBaseball.jsx"
 import FastClick from "./src/routes/fastClick/FastClick.jsx"
-import RSP from "./src/routes/rsp/RSP.jsx"
+import RSP from "./src/routes/rsp/RSP_hook.jsx"
 import "./App.css"
 
 const App = () => {

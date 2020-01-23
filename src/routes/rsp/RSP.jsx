@@ -36,14 +36,21 @@ class RSP extends React.Component {
 
   // 첫 렌더 수행 후 (주로 비동기요청 실행)
   componentDidMount() {
-    this.intervalID = setInterval(this.changeRSC, 100)
+    this.intervalID = setInterval(this.changeRSC, 70)
+    console.log("interval 시작")
   }
 
   // 컴포넌트 리렌더링 된 후  (props가 바뀌거나 setstate 된 후)
-  componentDidUpdate() {}
+  componentDidUpdate() {
+    console.log("interval 재시작")
+  }
 
   // 컴포넌트 제거되기 직전 (비동기 요청 정리)
-  componentWillUnmount() {}
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
+    clearTimeout(this.timeoutID)
+    console.log("interval 종료")
+  }
 
   changeRSC = () => {
     const { imgCoord } = this.state
@@ -63,10 +70,9 @@ class RSP extends React.Component {
   }
 
   onClikBtn = choice => () => {
-    if (this.intervalID == this.prev_intervalID) return
+    // 인자가 있으므로 고차함수로 줘야댐
+    if (this.intervalID == this.prev_intervalID) return // 무한클릭 방지
     this.prev_intervalID = this.intervalID
-    console.log("intervalID = ", this.intervalID)
-    console.log("prev_intervalID = ", this.prev_intervalID)
     const { imgCoord } = this.state
     clearTimeout(this.timeoutID)
     clearInterval(this.intervalID)
