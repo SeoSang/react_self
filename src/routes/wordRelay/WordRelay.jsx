@@ -27,7 +27,7 @@ const WordRelay = () => {
 
   return (
     <React.Fragment>
-      <div id="gugudanTitle">
+      <div className="gugudanTitle">
         <h1>끝말잇기를 해</h1>
       </div>
       <div className="gugudan">

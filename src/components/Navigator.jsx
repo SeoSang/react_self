@@ -25,6 +25,9 @@ export default function Navigator() {
         <Link to="/rsp">
           <li>가위바위보</li>
         </Link>
+        <Link to="/lotto">
+          <li>로또 추첨기</li>
+        </Link>
       </ul>
     </>
   )

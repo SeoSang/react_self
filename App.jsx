@@ -7,7 +7,8 @@ import Navigator from "./src/components/Navigator.jsx"
 import WordRelay from "./src/routes/wordRelay/WordRelay.jsx"
 import NumberBaseball from "./src/routes/numberBaseball/NumberBaseball.jsx"
 import FastClick from "./src/routes/fastClick/FastClick.jsx"
-import RSP from "./src/routes/rsp/RSP_hook.jsx"
+import RSP from "./src/routes/rsp/RSP.jsx"
+import Lotto from "./src/routes/lotto/Lotto.jsx"
 import "./App.css"
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/numberbaseball" component={NumberBaseball} />
           <Route path="/fastclick" component={FastClick} />
           <Route path="/rsp" component={RSP} />
+          <Route path="/lotto" component={Lotto} />
         </Switch>
       </BrowserRouter>
       <Footer />

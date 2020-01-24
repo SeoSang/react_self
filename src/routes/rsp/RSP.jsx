@@ -105,6 +105,7 @@ class RSP extends React.Component {
     const { result, score, imgCoord } = this.state
     return (
       <>
+        <div className="gameTitle lotto-title">가위바위보</div>
         <div
           id="rsc-computer"
           style={{ background: `url(https://en.pimg.jp/023/182/267/1/23182267.jpg) ${imgCoord} 0` }}
@@ -121,10 +122,7 @@ class RSP extends React.Component {
           </button>
         </div>
         <div id="rsc-result">{result}</div>
-        <div id="rsc-score">
-          <label>내 점수는 </label>
-          <span>{score}점</span>
-        </div>
+        <div id="rsc-score">내 점수는 {score}점</div>
       </>
     )
   }

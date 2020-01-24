@@ -41,7 +41,7 @@ const Gugudan = () => {
 
   return (
     <React.Fragment>
-      <div id="gugudanTitle">
+      <div className="gugudanTitle">
         <h1>구구단을 외자</h1>
       </div>
       <div className="gugudan">

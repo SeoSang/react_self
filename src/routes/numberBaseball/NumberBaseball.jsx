@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, createRef } from "react"
+import Try from "./Try.jsx"
 
 // 임의의 4자리 다 다른 숫자 받아오기 (문자열 배열)
 const getRandomNumbers = () => {
@@ -69,6 +70,7 @@ const NumberBaseball = () => {
       }
       setValue("")
     }
+    inputFocus()
   }
 
   const onChangeInput = e => {
@@ -76,23 +78,29 @@ const NumberBaseball = () => {
     setValue(e.target.value)
   }
 
+  let valueInput = createRef()
+
+  const inputFocus = () => {
+    valueInput.current.focus()
+  }
+
   return (
     <React.Fragment>
-      <h1>숫자야구</h1>
-      <h1>{result}</h1>
-      <h1>{answer}</h1>
-      <form onSubmit={onSubmitForm}>
-        <input maxLength={4} value={value} onChange={onChangeInput}></input>
-      </form>
-      <ul>
-        {tries.map((tr, i) => {
-          return (
-            <li>
-              {tr.try} 결과는 {tr.result}
-            </li>
-          )
-        })}
-      </ul>
+      <div className="gugudanTitle">
+        <h1>숫자야구</h1>
+      </div>
+      <div className="gugudan">
+        <h1>4자리 숫자를 맞춰보세요</h1>
+        <h1>{result}</h1>
+        <form onSubmit={onSubmitForm}>
+          <input ref={valueInput} maxLength={4} value={value} onChange={onChangeInput}></input>
+        </form>
+        <ul>
+          {tries.map((tr, i) => (
+            <Try key={`${i}차 시도 입니다.`} tryInfo={tr}></Try>
+          ))}
+        </ul>
+      </div>
     </React.Fragment>
   )
 }
