@@ -8,7 +8,7 @@ import WordRelay from "./src/routes/wordRelay/WordRelay.jsx"
 import NumberBaseball from "./src/routes/numberBaseball/NumberBaseball.jsx"
 import FastClick from "./src/routes/fastClick/FastClick.jsx"
 import RSP from "./src/routes/rsp/RSP.jsx"
-import Lotto from "./src/routes/lotto/Lotto.jsx"
+import Lotto from "./src/routes/lotto/Lotto_hook.jsx"
 import "./App.css"
 
 const App = () => {
