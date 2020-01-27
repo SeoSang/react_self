@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import Tr from "./Tr.jsx"
 
 const Table = ({ onClick, tableData, result, dispatch }) => {
@@ -20,4 +20,4 @@ const Table = ({ onClick, tableData, result, dispatch }) => {
   )
 }
 
-export default Table
+export default memo(Table)
