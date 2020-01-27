@@ -9,6 +9,7 @@ import NumberBaseball from "./src/routes/numberBaseball/NumberBaseball.jsx"
 import FastClick from "./src/routes/fastClick/FastClick.jsx"
 import RSP from "./src/routes/rsp/RSP.jsx"
 import Lotto from "./src/routes/lotto/Lotto_hook.jsx"
+import TicTacToe from "./src/routes/tictactoe/TicTacToe.jsx"
 import "./App.css"
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/fastclick" component={FastClick} />
           <Route path="/rsp" component={RSP} />
           <Route path="/lotto" component={Lotto} />
+          <Route path="/tictactoe" component={TicTacToe} />
         </Switch>
       </BrowserRouter>
       <Footer />

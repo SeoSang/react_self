@@ -42,6 +42,8 @@ const RSP = () => {
   //   // 컴포넌트 제거되기 직전 (비동기 요청 정리)
   //   componentWillUnmount() {}
 
+  // useLayoutEffect()  -> 화면이 바뀌기 전에 화면이 바뀌었나 확인
+
   useEffect(() => {
     intervalID.current = setInterval(changeRSC, 70)
     return () => {
