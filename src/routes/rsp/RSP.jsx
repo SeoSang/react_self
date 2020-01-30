@@ -37,13 +37,10 @@ class RSP extends React.Component {
   // 첫 렌더 수행 후 (주로 비동기요청 실행)
   componentDidMount() {
     this.intervalID = setInterval(this.changeRSC, 70)
-    console.log("interval 시작")
   }
 
   // 컴포넌트 리렌더링 된 후  (props가 바뀌거나 setstate 된 후)
-  componentDidUpdate() {
-    console.log("interval 재시작")
-  }
+  componentDidUpdate() {}
 
   // 컴포넌트 제거되기 직전 (비동기 요청 정리)
   componentWillUnmount() {

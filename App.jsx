@@ -10,6 +10,7 @@ import FastClick from "./src/routes/fastClick/FastClick.jsx"
 import RSP from "./src/routes/rsp/RSP.jsx"
 import Lotto from "./src/routes/lotto/Lotto_hook.jsx"
 import TicTacToe from "./src/routes/tictactoe/TicTacToe.jsx"
+import GameSelecting from "./src/components/GameSelecting.jsx"
 import "./App.css"
 
 const App = () => {
@@ -20,13 +21,7 @@ const App = () => {
         <Navigator />
         <Switch>
           <Route path="/home" component={Home} />
-          <Route path="/gugudan" component={Gugudan} />
-          <Route path="/wordrelay" component={WordRelay} />
-          <Route path="/numberbaseball" component={NumberBaseball} />
-          <Route path="/fastclick" component={FastClick} />
-          <Route path="/rsp" component={RSP} />
-          <Route path="/lotto" component={Lotto} />
-          <Route path="/tictactoe" component={TicTacToe} />
+          <Route path="/game/:name" component={GameSelecting} />
         </Switch>
       </BrowserRouter>
       <Footer />
