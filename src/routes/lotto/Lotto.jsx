@@ -21,8 +21,7 @@ class Lotto extends Component {
   state = {
     winNums: getWinNumbers(),
     winBalls: [],
-    bonus: null,
-    redo: false
+    bonus: null
   }
 
   timeoutIDs = []
@@ -32,8 +31,7 @@ class Lotto extends Component {
     this.setState({
       winNums: getWinNumbers(),
       winBalls: [],
-      bonus: null,
-      redo: false
+      bonus: null
     })
     this.timeoutIDs.forEach(v => {
       clearTimeout(v)

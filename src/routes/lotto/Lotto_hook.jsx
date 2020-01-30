@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef, useEffect } from "react"
+import React, { Component, useState, useRef, useEffect, useMemo, useCallback } from "react"
 import Ball from "./Ball.jsx"
 import "./Lotto.css"
 
@@ -18,10 +18,10 @@ function getWinNumbers() {
 }
 
 const Lotto = () => {
-  const [winNums, setWinNums] = useState(getWinNumbers())
+  const lottoNums = useMemo(() => getWinNumbers(), [])
+  const [winNums, setWinNums] = useState(lottoNums)
   const [winBalls, setWinBalls] = useState([])
   const [bonus, setBonus] = useState(null)
-  const [redo, setRedo] = useState(false)
 
   const timeoutIDs = useRef([])
   const bonusTimeoutID = useRef()
@@ -30,7 +30,6 @@ const Lotto = () => {
     setWinNums(getWinNumbers())
     setWinBalls([])
     setBonus(null)
-    setRedo(false)
     timeoutIDs.current.forEach(v => {
       clearTimeout(v)
     })

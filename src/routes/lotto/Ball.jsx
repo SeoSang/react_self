@@ -1,6 +1,6 @@
-import React, { Component } from "react"
+import React, { Component, memo } from "react"
 
-export default class Ball extends Component {
+class Ball extends Component {
   render() {
     const styles = {
       borderRadius: "10000px",
@@ -25,3 +25,5 @@ export default class Ball extends Component {
     return <div style={styles}>{this.props.number}</div>
   }
 }
+
+export default memo(Ball)
