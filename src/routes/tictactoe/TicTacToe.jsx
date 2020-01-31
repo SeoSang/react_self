@@ -91,7 +91,7 @@ function TicTacToe() {
   return (
     <>
       <Table tableData={state.tableData} dispatch={dispatch} result={state.result}></Table>
-      {state.result && <div>{state.result}</div>}
+      {state.result && <div className="tictactoe-result">{state.result}</div>}
     </>
   )
 }

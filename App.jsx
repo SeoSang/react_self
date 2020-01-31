@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, HashRouter, Route, Switch, Link } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Home from "./Home.jsx"
 import Footer from "./src/components/Footer.jsx"
 import Navigator from "./src/components/Navigator.jsx"
@@ -9,7 +9,7 @@ import "./App.css"
 const App = () => {
   return (
     <>
-      <h1 className="main">상혁의 React 게임</h1>
+      <h1 className="main">React를 활용한 간단한 게임모음</h1>
       <BrowserRouter>
         <Navigator />
         <Switch>

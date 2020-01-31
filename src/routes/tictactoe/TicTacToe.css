@@ -1,12 +1,16 @@
 table {
   border-collapse: collapse;
-  margin: 10vmin auto;
+  margin: 10vmin auto 5vmin;
   height: 60vmin;
 }
 td {
   border: 3px solid black;
   width: 20vmin;
   text-align: center;
+  font-size: 2rem;
+}
+
+.tictactoe-result {
   font-size: 2rem;
 }
 

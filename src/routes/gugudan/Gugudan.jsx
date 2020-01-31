@@ -62,7 +62,7 @@ const Gugudan = () => {
             </fieldset>
           </form>
         </div>
-        <div className="guguan__result">{result}</div>
+        <div className="gugudan__result">{result}</div>
       </div>
     </React.Fragment>
   )
